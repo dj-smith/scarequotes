@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <title>Scare Quotes Configuration</title>
+    <div class="rangeslider">
+      <input type="range" min="1" max="100" value="10"
+                     class="slider" id="sliderRange">
+      <p>Value: <span id="demo"></span></p>
+    </div>
+    <script>
+
+    var rangeslider = document.getElementById("sliderRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = rangeslider.value;
+
+    rangeslider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+
+    </script>
+  </body>
+  <script src="options.js"></script>
+  <script src="background.js"></script>
+</html>
